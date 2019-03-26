@@ -10,8 +10,6 @@
 		009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F342249DAB3001E9B43 /* SettingVC.swift */; };
 		009D6F402249E102001E9B43 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F3F2249E102001E9B43 /* ExUIView.swift */; };
 		009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F412249E1C8001E9B43 /* TodoVC.swift */; };
-		009D6F442249E260001E9B43 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F432249E260001E9B43 /* TodoView.swift */; };
-		009D6F462249E26D001E9B43 /* TodoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F452249E26D001E9B43 /* TodoView.xib */; };
 		009D6F482249E42E001E9B43 /* Todo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F472249E42E001E9B43 /* Todo.storyboard */; };
 		009D6F4C2249E5FB001E9B43 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F4B2249E5FB001E9B43 /* Schedule.storyboard */; };
 		009D6F522249EDA9001E9B43 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F512249EDA9001E9B43 /* ScheduleVC.swift */; };
@@ -20,6 +18,8 @@
 		009D6F58224A0FD4001E9B43 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F57224A0FD4001E9B43 /* SettingView.swift */; };
 		009D6F5A224A0FDE001E9B43 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F59224A0FDE001E9B43 /* SettingView.xib */; };
 		009D6F5C224A0FEE001E9B43 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F5B224A0FEE001E9B43 /* Setting.storyboard */; };
+		009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F61224A1939001E9B43 /* TodoTableCell.swift */; };
+		009D6F64224A1939001E9B43 /* TodoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F62224A1939001E9B43 /* TodoTableCell.xib */; };
 		00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CA6B9B2247C34300A4DFAA /* AppDelegate.swift */; };
 		00CA6BA32247C34300A4DFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CA6BA12247C34300A4DFAA /* Main.storyboard */; };
 		00CA6BA52247C34400A4DFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CA6BA42247C34400A4DFAA /* Assets.xcassets */; };
@@ -49,8 +49,6 @@
 		009D6F342249DAB3001E9B43 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		009D6F3F2249E102001E9B43 /* ExUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
 		009D6F412249E1C8001E9B43 /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
-		009D6F432249E260001E9B43 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
-		009D6F452249E26D001E9B43 /* TodoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoView.xib; sourceTree = "<group>"; };
 		009D6F472249E42E001E9B43 /* Todo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todo.storyboard; sourceTree = "<group>"; };
 		009D6F4B2249E5FB001E9B43 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		009D6F512249EDA9001E9B43 /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
@@ -59,6 +57,8 @@
 		009D6F57224A0FD4001E9B43 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		009D6F59224A0FDE001E9B43 /* SettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		009D6F5B224A0FEE001E9B43 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		009D6F61224A1939001E9B43 /* TodoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
+		009D6F62224A1939001E9B43 /* TodoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableCell.xib; sourceTree = "<group>"; };
 		00CA6B982247C34300A4DFAA /* TicketSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CA6B9B2247C34300A4DFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CA6BA22247C34300A4DFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				009D6F412249E1C8001E9B43 /* TodoVC.swift */,
-				009D6F432249E260001E9B43 /* TodoView.swift */,
-				009D6F452249E26D001E9B43 /* TodoView.xib */,
 				009D6F472249E42E001E9B43 /* Todo.storyboard */,
+				009D6F61224A1939001E9B43 /* TodoTableCell.swift */,
+				009D6F62224A1939001E9B43 /* TodoTableCell.xib */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -299,11 +299,11 @@
 			files = (
 				00CA6BA82247C34400A4DFAA /* LaunchScreen.storyboard in Resources */,
 				009D6F5A224A0FDE001E9B43 /* SettingView.xib in Resources */,
+				009D6F64224A1939001E9B43 /* TodoTableCell.xib in Resources */,
 				009D6F562249F017001E9B43 /* ScheduleView.xib in Resources */,
 				009D6F482249E42E001E9B43 /* Todo.storyboard in Resources */,
 				00CA6BA52247C34400A4DFAA /* Assets.xcassets in Resources */,
 				009D6F5C224A0FEE001E9B43 /* Setting.storyboard in Resources */,
-				009D6F462249E26D001E9B43 /* TodoView.xib in Resources */,
 				00CA6BA32247C34300A4DFAA /* Main.storyboard in Resources */,
 				009D6F4C2249E5FB001E9B43 /* Schedule.storyboard in Resources */,
 			);
@@ -330,11 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009D6F442249E260001E9B43 /* TodoView.swift in Sources */,
 				009D6F522249EDA9001E9B43 /* ScheduleVC.swift in Sources */,
 				009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */,
 				009D6F542249EFC2001E9B43 /* ScheduleView.swift in Sources */,
 				009D6F402249E102001E9B43 /* ExUIView.swift in Sources */,
+				009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */,
 				009D6F58224A0FD4001E9B43 /* SettingView.swift in Sources */,
 				009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */,
 				00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */,
