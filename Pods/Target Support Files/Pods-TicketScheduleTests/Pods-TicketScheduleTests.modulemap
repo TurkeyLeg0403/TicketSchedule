@@ -1,0 +1,6 @@
+framework module Pods_TicketScheduleTests {
+  umbrella header "Pods-TicketScheduleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
