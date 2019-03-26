@@ -29,6 +29,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="54R-M0-NOZ">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="cellAdd:" destination="p1b-Eb-8Ml" id="8MK-ea-wd1"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
