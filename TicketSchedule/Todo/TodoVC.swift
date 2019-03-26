@@ -11,6 +11,8 @@ import UIKit
 class TodoVC: UIViewController {
 
     @IBOutlet weak var todoTable: UITableView!
+    @IBOutlet weak var cellContentField: UITextField!
+    
     var contents = [String]()
     
     override func viewDidLoad() {
@@ -22,9 +24,9 @@ class TodoVC: UIViewController {
         self.todoTable.register(UINib(nibName: "TodoTableCell", bundle: nil), forCellReuseIdentifier: "TodoTableCell")
     }
     
-    @IBAction func cellAdd(_ sender: UIBarButtonItem) {
+    @IBAction func cellAdd(_ sender: UIButton) {
         // add contents
-        self.contents += ["TEST"]
+        self.contents += [self.cellContentField.text!]
         self.todoTable.reloadData()
     }
 }
