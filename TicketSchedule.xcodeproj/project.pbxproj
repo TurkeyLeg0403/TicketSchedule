@@ -21,6 +21,8 @@
 		009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F61224A1939001E9B43 /* TodoTableCell.swift */; };
 		009D6F64224A1939001E9B43 /* TodoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F62224A1939001E9B43 /* TodoTableCell.xib */; };
 		009D6F6C224A27F9001E9B43 /* ExTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */; };
+		009D6F6F224A3149001E9B43 /* TodoControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6E224A3149001E9B43 /* TodoControler.swift */; };
+		009D6F72224A32C3001E9B43 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F71224A32C3001E9B43 /* Messages.swift */; };
 		00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CA6B9B2247C34300A4DFAA /* AppDelegate.swift */; };
 		00CA6BA32247C34300A4DFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CA6BA12247C34300A4DFAA /* Main.storyboard */; };
 		00CA6BA52247C34400A4DFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CA6BA42247C34400A4DFAA /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		009D6F61224A1939001E9B43 /* TodoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
 		009D6F62224A1939001E9B43 /* TodoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableCell.xib; sourceTree = "<group>"; };
 		009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTodoVC.swift; sourceTree = "<group>"; };
+		009D6F6E224A3149001E9B43 /* TodoControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoControler.swift; sourceTree = "<group>"; };
+		009D6F71224A32C3001E9B43 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		00CA6B982247C34300A4DFAA /* TicketSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CA6B9B2247C34300A4DFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CA6BA22247C34300A4DFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,8 +150,17 @@
 		009D6F6D224A2EAA001E9B43 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				009D6F6E224A3149001E9B43 /* TodoControler.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		009D6F70224A32AE001E9B43 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				009D6F71224A32C3001E9B43 /* Messages.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		00CA6B8F2247C34300A4DFAA = {
@@ -173,6 +186,7 @@
 		00CA6B9A2247C34300A4DFAA /* TicketSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				009D6F70224A32AE001E9B43 /* Enums */,
 				009D6F3E2249E0E3001E9B43 /* Extensions */,
 				009D6F312249D9AF001E9B43 /* Todo */,
 				009D6F322249D9C3001E9B43 /* Schedule */,
@@ -341,11 +355,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009D6F6F224A3149001E9B43 /* TodoControler.swift in Sources */,
 				009D6F522249EDA9001E9B43 /* ScheduleVC.swift in Sources */,
 				009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */,
 				009D6F542249EFC2001E9B43 /* ScheduleView.swift in Sources */,
 				009D6F402249E102001E9B43 /* ExUIView.swift in Sources */,
 				009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */,
+				009D6F72224A32C3001E9B43 /* Messages.swift in Sources */,
 				009D6F58224A0FD4001E9B43 /* SettingView.swift in Sources */,
 				009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */,
 				009D6F6C224A27F9001E9B43 /* ExTodoVC.swift in Sources */,

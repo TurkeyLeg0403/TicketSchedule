@@ -33,3 +33,10 @@ extension TodoVC: UITableViewDelegate, UITableViewDataSource {
         
     }
 }
+
+//MARK: - cellContentField
+extension TodoVC{
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        self.cellAddBtn.isEnabled = !(cellContentField.text?.isEmpty ?? true)
+    }
+}

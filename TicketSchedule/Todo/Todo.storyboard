@@ -38,7 +38,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2te-uD-QOo">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2te-uD-QOo">
                                         <rect key="frame" x="335" y="10" width="30" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="DRb-bC-tJU"/>
@@ -92,6 +92,7 @@
                     <tabBarItem key="tabBarItem" title="Todo" image="todo_1" id="dK6-xt-E6m"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="cellAddBtn" destination="2te-uD-QOo" id="abe-7i-FpN"/>
                         <outlet property="cellContentField" destination="V5m-gD-eRB" id="5UG-nm-0MF"/>
                         <outlet property="todoTable" destination="35g-95-LZS" id="ABe-nv-LBM"/>
                     </connections>
