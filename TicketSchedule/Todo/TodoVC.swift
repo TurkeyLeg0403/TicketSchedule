@@ -32,5 +32,6 @@ class TodoVC: UIViewController {
         // add contents
         self.contents += [self.cellContentField.text!]
         self.todoTable.reloadData()
+        self.cellContentField.text = ""
     }
 }
