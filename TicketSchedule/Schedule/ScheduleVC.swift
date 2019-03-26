@@ -1,21 +1,18 @@
 //
-//  SecondViewController.swift
+//  ScheduleVC.swift
 //  TicketSchedule
 //
-//  Created by Takaki Otsu on 2019/03/24.
+//  Created by Takaki Otsu on 2019/03/26.
 //  Copyright © 2019 Takaki Otsu. All rights reserved.
 //
 
 import UIKit
 
-class SheduleVC: UIViewController {
+class ScheduleVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
     }
 
-
 }
-

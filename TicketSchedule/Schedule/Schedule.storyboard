@@ -13,7 +13,7 @@
         <!--Schedule-->
         <scene sceneID="VAX-D4-v4O">
             <objects>
-                <viewController id="npJ-I5-FzV" customClass="SheduleVC" customModule="TicketSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="npJ-I5-FzV" customClass="ScheduleVC" customModule="TicketSchedule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e24-KA-Oy2" customClass="ScheduleView" customModule="TicketSchedule" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
