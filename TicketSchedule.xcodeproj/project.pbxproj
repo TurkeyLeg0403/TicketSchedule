@@ -23,6 +23,7 @@
 		009D6F6C224A27F9001E9B43 /* ExTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */; };
 		009D6F6F224A3149001E9B43 /* TodoControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6E224A3149001E9B43 /* TodoControler.swift */; };
 		009D6F72224A32C3001E9B43 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F71224A32C3001E9B43 /* Messages.swift */; };
+		009D6F74224A5CC2001E9B43 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F73224A5CC2001E9B43 /* CheckBox.swift */; };
 		00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CA6B9B2247C34300A4DFAA /* AppDelegate.swift */; };
 		00CA6BA32247C34300A4DFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CA6BA12247C34300A4DFAA /* Main.storyboard */; };
 		00CA6BA52247C34400A4DFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CA6BA42247C34400A4DFAA /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTodoVC.swift; sourceTree = "<group>"; };
 		009D6F6E224A3149001E9B43 /* TodoControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoControler.swift; sourceTree = "<group>"; };
 		009D6F71224A32C3001E9B43 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		009D6F73224A5CC2001E9B43 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		00CA6B982247C34300A4DFAA /* TicketSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CA6B9B2247C34300A4DFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CA6BA22247C34300A4DFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				009D6F472249E42E001E9B43 /* Todo.storyboard */,
 				009D6F61224A1939001E9B43 /* TodoTableCell.swift */,
 				009D6F62224A1939001E9B43 /* TodoTableCell.xib */,
+				009D6F73224A5CC2001E9B43 /* CheckBox.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */,
 				009D6F72224A32C3001E9B43 /* Messages.swift in Sources */,
 				009D6F58224A0FD4001E9B43 /* SettingView.swift in Sources */,
+				009D6F74224A5CC2001E9B43 /* CheckBox.swift in Sources */,
 				009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */,
 				009D6F6C224A27F9001E9B43 /* ExTodoVC.swift in Sources */,
 				00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */,

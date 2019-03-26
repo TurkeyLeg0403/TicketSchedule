@@ -33,5 +33,6 @@ class TodoVC: UIViewController {
         self.contents += [self.cellContentField.text!]
         self.todoTable.reloadData()
         self.cellContentField.text = ""
+        self.cellAddBtn.isEnabled = false
     }
 }

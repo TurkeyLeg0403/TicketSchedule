@@ -20,34 +20,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcV-dT-uWP">
-                        <rect key="frame" x="16" y="11" width="231" height="22"/>
+                        <rect key="frame" x="16" y="11" width="242" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hz-s7-4lQ">
-                        <rect key="frame" x="257" y="11" width="49" height="22"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvk-ib-436" customClass="CheckBox" customModule="TicketSchedule" customModuleProvider="target">
+                        <rect key="frame" x="258" y="11" width="46" height="22"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="47" id="Nje-Ld-UJy"/>
+                            <constraint firstAttribute="width" constant="46" id="LWZ-QV-pFy"/>
                         </constraints>
-                    </switch>
+                        <state key="normal" image="checkmark_off"/>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="AcV-dT-uWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2tC-uw-UdM"/>
-                    <constraint firstItem="6hz-s7-4lQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="47H-rg-KF4"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="6hz-s7-4lQ" secondAttribute="trailing" id="RhH-PO-Ivo"/>
-                    <constraint firstItem="AcV-dT-uWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XJd-AE-HBX"/>
-                    <constraint firstItem="6hz-s7-4lQ" firstAttribute="leading" secondItem="AcV-dT-uWP" secondAttribute="trailing" constant="10" id="nMB-U6-s1F"/>
-                    <constraint firstItem="AcV-dT-uWP" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="utK-7h-t5Y"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="6hz-s7-4lQ" secondAttribute="bottom" id="xs4-Le-a7s"/>
+                    <constraint firstItem="AcV-dT-uWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5yF-2j-QbB"/>
+                    <constraint firstItem="Nvk-ib-436" firstAttribute="leading" secondItem="AcV-dT-uWP" secondAttribute="trailing" id="N0u-nn-DKL"/>
+                    <constraint firstItem="AcV-dT-uWP" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="PPB-Xb-HoP"/>
+                    <constraint firstItem="Nvk-ib-436" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Uh1-oS-jqK"/>
+                    <constraint firstItem="AcV-dT-uWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="WSV-6s-0Lq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Nvk-ib-436" secondAttribute="trailing" id="cy9-ke-GJJ"/>
+                    <constraint firstItem="Nvk-ib-436" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="hbk-pY-mdU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="content" destination="AcV-dT-uWP" id="NUF-Kf-7of"/>
-                <outlet property="status" destination="6hz-s7-4lQ" id="sSs-3j-kfn"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="111.54422788605699"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="checkmark_off" width="16" height="16"/>
+    </resources>
 </document>
