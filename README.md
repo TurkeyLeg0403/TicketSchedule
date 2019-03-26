@@ -1,3 +1,3 @@
 # TicketSchedule
 This is a iOS App to manage your todo and schedule for a short-term.
-stats: Development now.
+status: Development now.
