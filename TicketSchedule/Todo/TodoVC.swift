@@ -18,7 +18,6 @@ class TodoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.todoTable.delegate = self
         self.todoTable.dataSource = self
         // set identifier to todoTable
@@ -27,13 +26,6 @@ class TodoVC: UIViewController {
         self.cellContentField.delegate = self
         self.cellContentField.addTarget(self, action: #selector(self.textFieldDidChange(_:)),
                                         for: UIControl.Event.editingChanged)
-    }
-    
-    // touch view
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.addCellContent()
-        // close the keyboard
-        self.view.endEditing(true)
     }
     
     @IBAction func cellAdd(_ sender: UIButton) {
