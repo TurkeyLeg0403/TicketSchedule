@@ -24,15 +24,21 @@ class TodoVC: UIViewController {
         // set identifier to todoTable
         self.todoTable.register(UINib(nibName: "TodoTableCell", bundle: nil), forCellReuseIdentifier: "TodoTableCell")
         // set action to cellContentField
+        self.cellContentField.delegate = self
         self.cellContentField.addTarget(self, action: #selector(self.textFieldDidChange(_:)),
                                         for: UIControl.Event.editingChanged)
     }
     
+    // touch view
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.addCellContent()
+        // close the keyboard
+        self.view.endEditing(true)
+    }
+    
     @IBAction func cellAdd(_ sender: UIButton) {
-        // add contents
-        self.contents += [self.cellContentField.text!]
-        self.todoTable.reloadData()
-        self.cellContentField.text = ""
-        self.cellAddBtn.isEnabled = false
+        self.addCellContent()
+        // close the keyboard
+        self.cellContentField.endEditing(true)
     }
 }

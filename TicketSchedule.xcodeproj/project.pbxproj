@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0031AB3C224B88A900559CB5 /* ExTodoVC_ctrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031AB3B224B88A900559CB5 /* ExTodoVC_ctrls.swift */; };
 		009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F342249DAB3001E9B43 /* SettingVC.swift */; };
 		009D6F402249E102001E9B43 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F3F2249E102001E9B43 /* ExUIView.swift */; };
 		009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F412249E1C8001E9B43 /* TodoVC.swift */; };
@@ -20,7 +21,7 @@
 		009D6F5C224A0FEE001E9B43 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F5B224A0FEE001E9B43 /* Setting.storyboard */; };
 		009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F61224A1939001E9B43 /* TodoTableCell.swift */; };
 		009D6F64224A1939001E9B43 /* TodoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009D6F62224A1939001E9B43 /* TodoTableCell.xib */; };
-		009D6F6C224A27F9001E9B43 /* ExTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */; };
+		009D6F6C224A27F9001E9B43 /* ExTodoVC_objs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6B224A27F9001E9B43 /* ExTodoVC_objs.swift */; };
 		009D6F6F224A3149001E9B43 /* TodoControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F6E224A3149001E9B43 /* TodoControler.swift */; };
 		009D6F72224A32C3001E9B43 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F71224A32C3001E9B43 /* Messages.swift */; };
 		009D6F74224A5CC2001E9B43 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F73224A5CC2001E9B43 /* CheckBox.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0031AB3B224B88A900559CB5 /* ExTodoVC_ctrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTodoVC_ctrls.swift; sourceTree = "<group>"; };
 		009D6F342249DAB3001E9B43 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		009D6F3F2249E102001E9B43 /* ExUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
 		009D6F412249E1C8001E9B43 /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		009D6F5B224A0FEE001E9B43 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		009D6F61224A1939001E9B43 /* TodoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableCell.swift; sourceTree = "<group>"; };
 		009D6F62224A1939001E9B43 /* TodoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableCell.xib; sourceTree = "<group>"; };
-		009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTodoVC.swift; sourceTree = "<group>"; };
+		009D6F6B224A27F9001E9B43 /* ExTodoVC_objs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTodoVC_objs.swift; sourceTree = "<group>"; };
 		009D6F6E224A3149001E9B43 /* TodoControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoControler.swift; sourceTree = "<group>"; };
 		009D6F71224A32C3001E9B43 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		009D6F73224A5CC2001E9B43 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -125,11 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				009D6F6D224A2EAA001E9B43 /* Controller */,
-				009D6F6B224A27F9001E9B43 /* ExTodoVC.swift */,
+				0031AB3B224B88A900559CB5 /* ExTodoVC_ctrls.swift */,
+				009D6F6B224A27F9001E9B43 /* ExTodoVC_objs.swift */,
 				009D6F412249E1C8001E9B43 /* TodoVC.swift */,
-				009D6F472249E42E001E9B43 /* Todo.storyboard */,
 				009D6F61224A1939001E9B43 /* TodoTableCell.swift */,
 				009D6F62224A1939001E9B43 /* TodoTableCell.xib */,
+				009D6F472249E42E001E9B43 /* Todo.storyboard */,
 				009D6F73224A5CC2001E9B43 /* CheckBox.swift */,
 			);
 			path = Todo;
@@ -248,7 +251,6 @@
 				968F7D58D336D32E31B8E8FD /* Pods-TicketScheduleUITests.debug.xcconfig */,
 				F2B2873C7BC667003C254389 /* Pods-TicketScheduleUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -498,6 +500,7 @@
 			files = (
 				009D6F6F224A3149001E9B43 /* TodoControler.swift in Sources */,
 				009D6F522249EDA9001E9B43 /* ScheduleVC.swift in Sources */,
+				0031AB3C224B88A900559CB5 /* ExTodoVC_ctrls.swift in Sources */,
 				009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */,
 				009D6F542249EFC2001E9B43 /* ScheduleView.swift in Sources */,
 				009D6F402249E102001E9B43 /* ExUIView.swift in Sources */,
@@ -506,7 +509,7 @@
 				009D6F58224A0FD4001E9B43 /* SettingView.swift in Sources */,
 				009D6F74224A5CC2001E9B43 /* CheckBox.swift in Sources */,
 				009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */,
-				009D6F6C224A27F9001E9B43 /* ExTodoVC.swift in Sources */,
+				009D6F6C224A27F9001E9B43 /* ExTodoVC_objs.swift in Sources */,
 				00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,8 +35,14 @@ extension TodoVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 //MARK: - cellContentField
-extension TodoVC{
+extension TodoVC: UITextFieldDelegate{
     @objc func textFieldDidChange(_ textField: UITextField) {
         self.cellAddBtn.isEnabled = !(cellContentField.text?.isEmpty ?? true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // close the keyboard
+        textField.resignFirstResponder()
+        return true
     }
 }
