@@ -48,3 +48,29 @@ extension TodoVC: UITextFieldDelegate{
     
     // setup and defend to cover the keyboard to the textfield
 }
+
+//MARK: - keyboard hide options
+extension TodoVC{
+    @objc func keyboardWillShow(notification: NSNotification) {
+        guard let userInfo = notification.userInfo else {return}
+        guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
+        let keyboardFrame = keyboardSize.cgRectValue
+        guard let tabBarHeight = self.tabBarController?.tabBar.frame.size.height else { return }
+        if self.view.frame.origin.y == 0{
+            self.view.frame.origin.y -= keyboardFrame.height - tabBarHeight
+        }
+        
+    }
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0{
+            self.view.frame.origin.y = 0
+        }
+    }
+}
+
+//MARK: - get item's datas
+extension TodoVC{
+    static func tabBarHeight(tabBarController: UITabBarController) -> CGFloat {
+        return tabBarController.tabBar.frame.size.height
+    }
+}

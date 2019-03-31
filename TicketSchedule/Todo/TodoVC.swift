@@ -26,6 +26,9 @@ class TodoVC: UIViewController {
         self.cellContentField.delegate = self
         self.cellContentField.addTarget(self, action: #selector(self.textFieldDidChange(_:)),
                                         for: UIControl.Event.editingChanged)
+        // set keyboard hide options
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @IBAction func cellAdd(_ sender: UIButton) {
