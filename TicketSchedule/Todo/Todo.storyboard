@@ -32,7 +32,15 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYS-3G-J3N">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35g-95-LZS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="505"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="p1b-Eb-8Ml" id="YmL-rZ-tdh"/>
+                                    <outlet property="delegate" destination="p1b-Eb-8Ml" id="bjL-ok-Iqf"/>
+                                </connections>
+                            </tableView>
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYS-3G-J3N">
                                 <rect key="frame" x="0.0" y="568" width="375" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5m-gD-eRB">
@@ -55,7 +63,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.8980392157" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="V5m-gD-eRB" firstAttribute="leading" secondItem="JYS-3G-J3N" secondAttribute="leadingMargin" id="5EC-lL-FpG"/>
                                     <constraint firstItem="V5m-gD-eRB" firstAttribute="top" secondItem="JYS-3G-J3N" secondAttribute="topMargin" id="5K8-fF-Bcr"/>
@@ -67,14 +75,6 @@
                                     <constraint firstAttribute="bottomMargin" secondItem="V5m-gD-eRB" secondAttribute="bottom" id="r18-lC-gr7"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35g-95-LZS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="505"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="p1b-Eb-8Ml" id="YmL-rZ-tdh"/>
-                                    <outlet property="delegate" destination="p1b-Eb-8Ml" id="bjL-ok-Iqf"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.8980392157" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -96,6 +96,8 @@
                     <connections>
                         <outlet property="cellAddBtn" destination="2te-uD-QOo" id="abe-7i-FpN"/>
                         <outlet property="cellContentField" destination="V5m-gD-eRB" id="5UG-nm-0MF"/>
+                        <outlet property="textInputView" destination="JYS-3G-J3N" id="Fga-RG-y2b"/>
+                        <outlet property="textInputViewBottom" destination="SZa-Dp-3ZP" id="EjH-8I-dvj"/>
                         <outlet property="todoTable" destination="35g-95-LZS" id="ABe-nv-LBM"/>
                     </connections>
                 </viewController>

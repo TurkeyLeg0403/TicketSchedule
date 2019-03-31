@@ -13,11 +13,14 @@ class TodoVC: UIViewController {
     @IBOutlet weak var todoTable: UITableView!
     @IBOutlet weak var cellContentField: UITextField!
     @IBOutlet weak var cellAddBtn: UIButton!
+    @IBOutlet weak var textInputView: UIView!
+    @IBOutlet weak var textInputViewBottom: NSLayoutConstraint!
     
     var contents = [String]()
-    
+    var textInputViewDefaultY = CGFloat()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.textInputViewDefaultY = self.textInputView.frame.origin.y
         self.todoTable.delegate = self
         self.todoTable.dataSource = self
         // set identifier to todoTable
