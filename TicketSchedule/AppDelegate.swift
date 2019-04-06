@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Separate Launch situations
+        let userDefault = UserDefaults.standard
+        let dict = ["firstLaunch": true]
+        userDefault.register(defaults: dict)
+        if userDefault.bool(forKey: "firstLaunch") {
+            print("first launch")
+            userDefault.set(false, forKey: "firstLaunch")
+        }
+        print("not first launch")
+        
+        // Setting Realm
+        RealmManager.realmConfig()
+        sleep(2);
         return true
     }
 
@@ -44,3 +57,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+func printHeader(fileNameStr: String, funcNameStr: String) {
+    //    if !FlagManager.showLogs { return }
+    let fileName: String = "\(fileNameStr.components(separatedBy: "/").last!.components(separatedBy: ".").first!)"
+    let funcName: String = "\(funcNameStr)"
+    let backSlash: String = {
+        var footer = ""
+        if 70 - fileName.count - funcName.count >= 0 {
+            for _ in 1...75-fileName.count - funcName.count {
+                footer += "/"
+            }
+        } else {
+            footer = "//"
+        }
+        return footer
+    }()
+    Swift.print("// \(fileName) \(funcName) \(backSlash)")
+}

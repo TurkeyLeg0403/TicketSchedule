@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0031AB3C224B88A900559CB5 /* ExTodoVC_ctrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031AB3B224B88A900559CB5 /* ExTodoVC_ctrls.swift */; };
+		0031AB412258A21E00559CB5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031AB402258A21E00559CB5 /* RealmManager.swift */; };
+		0031AB432258A27C00559CB5 /* RealmActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031AB422258A27C00559CB5 /* RealmActions.swift */; };
+		0031AB452258A2AC00559CB5 /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031AB442258A2AC00559CB5 /* RealmModels.swift */; };
+		0031AB472258AEBB00559CB5 /* RealmStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0031AB462258AEBB00559CB5 /* RealmStructs.swift */; };
 		009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F342249DAB3001E9B43 /* SettingVC.swift */; };
 		009D6F402249E102001E9B43 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F3F2249E102001E9B43 /* ExUIView.swift */; };
 		009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D6F412249E1C8001E9B43 /* TodoVC.swift */; };
@@ -55,6 +59,10 @@
 
 /* Begin PBXFileReference section */
 		0031AB3B224B88A900559CB5 /* ExTodoVC_ctrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExTodoVC_ctrls.swift; sourceTree = "<group>"; };
+		0031AB402258A21E00559CB5 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		0031AB422258A27C00559CB5 /* RealmActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmActions.swift; sourceTree = "<group>"; };
+		0031AB442258A2AC00559CB5 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
+		0031AB462258AEBB00559CB5 /* RealmStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStructs.swift; sourceTree = "<group>"; };
 		009D6F342249DAB3001E9B43 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		009D6F3F2249E102001E9B43 /* ExUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
 		009D6F412249E1C8001E9B43 /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
@@ -123,6 +131,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0031AB3D22589DA000559CB5 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				0031AB402258A21E00559CB5 /* RealmManager.swift */,
+				0031AB422258A27C00559CB5 /* RealmActions.swift */,
+				0031AB442258A2AC00559CB5 /* RealmModels.swift */,
+				0031AB462258AEBB00559CB5 /* RealmStructs.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		009D6F312249D9AF001E9B43 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +228,7 @@
 		00CA6B9A2247C34300A4DFAA /* TicketSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				0031AB3D22589DA000559CB5 /* Realm */,
 				009D6F70224A32AE001E9B43 /* Enums */,
 				009D6F3E2249E0E3001E9B43 /* Extensions */,
 				009D6F312249D9AF001E9B43 /* Todo */,
@@ -499,10 +519,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				009D6F6F224A3149001E9B43 /* TodoControler.swift in Sources */,
+				0031AB452258A2AC00559CB5 /* RealmModels.swift in Sources */,
 				009D6F522249EDA9001E9B43 /* ScheduleVC.swift in Sources */,
 				0031AB3C224B88A900559CB5 /* ExTodoVC_ctrls.swift in Sources */,
 				009D6F352249DAB3001E9B43 /* SettingVC.swift in Sources */,
 				009D6F542249EFC2001E9B43 /* ScheduleView.swift in Sources */,
+				0031AB412258A21E00559CB5 /* RealmManager.swift in Sources */,
 				009D6F402249E102001E9B43 /* ExUIView.swift in Sources */,
 				009D6F63224A1939001E9B43 /* TodoTableCell.swift in Sources */,
 				009D6F72224A32C3001E9B43 /* Messages.swift in Sources */,
@@ -510,6 +532,8 @@
 				009D6F74224A5CC2001E9B43 /* CheckBox.swift in Sources */,
 				009D6F422249E1C8001E9B43 /* TodoVC.swift in Sources */,
 				009D6F6C224A27F9001E9B43 /* ExTodoVC_objs.swift in Sources */,
+				0031AB432258A27C00559CB5 /* RealmActions.swift in Sources */,
+				0031AB472258AEBB00559CB5 /* RealmStructs.swift in Sources */,
 				00CA6B9C2247C34300A4DFAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
